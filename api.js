@@ -57,7 +57,7 @@ app.post('/create', (req, res) => {
     - otp_code                  : otp_code
     */
 
-    const app_id = '001';
+    const app_id = 'xxxxxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const mytoken = sanitizer.sanitize(req.body.token);
@@ -167,7 +167,7 @@ app.post('/verify', (req, res) => {
     - message code              : it is 200
     */
 
-    const app_id = '007';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const uuid = sanitizer.sanitize(req.body.uuid);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
@@ -230,7 +230,7 @@ app.post('/createpin', (req, res) => {
     - message code              : it is 200
     */
 
-    const app_id = '008';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const uuid = sanitizer.sanitize(req.body.uuid);
@@ -337,7 +337,7 @@ app.post('/login', (req, res) => {
     - message code              : it is 200
     */
 
-    const app_id = '009';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const pin = sanitizer.sanitize(req.body.pin);
@@ -429,7 +429,7 @@ app.post('/topup', (req, res) => {
     - sn_client                 : random id sent from hitter. We will send it back as is
     - sn_trx                    : random digit from us. Hitter must keep it just in case customer complaint, or use for reversal
     */
-    const app_id = '002';
+    const app_id = 'xxx';
     const ip = req.clientIp.split(":").pop();
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const pg = sanitizer.sanitize(req.body.pg);
@@ -528,7 +528,7 @@ app.post('/balance', (req, res) => {
     - token                 : Combination of hash(256) -> DDMMYYYY + partner_key + partner_secret + app_id
     - customer_phone_number : customer_phone_number to check balance
     */
-    const app_id = '003';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const mytoken = sanitizer.sanitize(req.body.token);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
@@ -598,7 +598,7 @@ app.post('/rvsl', (req, res) => {
     - customer_phone_number    : customer_phone_number
     - message                  : will be stated as OK
     */
-    const app_id = '004';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const mytoken = sanitizer.sanitize(req.body.token);
@@ -706,7 +706,7 @@ app.post('/purchase', (req, res) => {
     - customer_balance          : latest customer balance after deduction
     - sn_trx                    : random digit from us. Hitter must keep it just in case customer complaint, or use for reversal
     */
-    const app_id = '005';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const mytoken = sanitizer.sanitize(req.body.token);
@@ -828,7 +828,7 @@ app.post('/viewProfile', (req, res) => {
     - customer_name             : customer name
     - customer email            : customer email address
     */
-    const app_id = '010';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const mytoken = sanitizer.sanitize(req.body.token);
@@ -908,7 +908,7 @@ app.post('/editProfile', (req, res) => {
     - customer_name             : customer name
     - customer email            : customer email address
     */
-    const app_id = '011';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const customer_name = sanitizer.sanitize(req.body.customer_name);
@@ -988,7 +988,7 @@ app.post('/transfer', (req, res) => {
     - target_balance            : latest target balance after receive money
     - sn_trx                    : random digit from us. Hitter must keep it just in case customer complaint, or use for reversal
     */
-    const app_id = '012';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const mytoken = sanitizer.sanitize(req.body.token);
@@ -1154,7 +1154,7 @@ app.post('/buyCustomerProduct', (req, res) => {
     - target_balance            : latest target balance after receive money
     - sn_trx                    : random digit from us. Hitter must keep it just in case customer complaint, or use for reversal
     */
-    const app_id = '014';
+    const app_id = 'xxx';
     const partner_key = sanitizer.sanitize(req.body.partner_key);
     const customer_phone_number = sanitizer.sanitize(req.body.customer_phone_number);
     const mytoken = sanitizer.sanitize(req.body.token);
