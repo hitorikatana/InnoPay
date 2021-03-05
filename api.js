@@ -18,9 +18,9 @@ app.use(requestIp.mw())
 
 const conn = mysql.createConnection({
     host: 'localhost',
-    user: 'root',
-    password: 'DatabaseP@ssw0rd@@12345',
-    database: 'db_inno_live'
+    user: 'blah_blah_blah_I_change_this_value',
+    password: '12345_blah_blah',
+    database: 'of_course_I_will_change_this_value'
 });
 
 conn.on('error', function (err) {
@@ -28,8 +28,8 @@ conn.on('error', function (err) {
 });
 
 const options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/api.innopay.id/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/api.innopay.id/fullchain.pem')
+    key: fs.readFileSync('secret laahhh'),
+    cert: fs.readFileSync('secrett laahhh')
 };
 
 app.use(bodyParser.urlencoded({ extended: true }));
